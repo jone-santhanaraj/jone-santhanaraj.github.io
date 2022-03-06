@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			href="assets/img/YBox_Favicon_-_Final.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<title>Ybox New</title>
+	</head>
+	<body>
+		<!-- Navbar START -->
+		<div class="navbar">
+			<div class="nav_contains">
+				<!-- Logo In Navabar - START -->
+				<div class="logo_container unselectable">
+					<img
+						src="assets/img/YBox_Logo_W_-_Final_01.png"
+						alt="Ybox Logo"
+						class="logo white logoW"
+					/>
+					<img
+						src="assets/img/YBox_Logo_-_Final_01.png"
+						alt="Ybox Logo In Green Color"
+						class="logo black logoG"
+						title="Ybox Official"
+					/>
+				</div>
+				<!-- Logo In Navbar - END -->
+
+				<!-- Navbar Links For Desktop - START -->
+				<div class="navlinks_container">
+					<ul class="navlinksul unselectable">
+						<li>
+							<a href="/index.html"
+								><span class="navlinks1 navlinkst" style="color: #44b129"
+									>HOME</span
+								></a
+							>
+						</li>
+						<li>
+							<a href="/games.html"
+								><span class="navlinks2 navlinkst" style="">GAMES</span></a
+							>
+						</li>
+						<li>
+							<a href="/consoles.html"
+								><span class="navlinks3 navlinkst" style="">CONSOLES</span></a
+							>
+						</li>
+						<li>
+							<a href="/accessories.html"
+								><span class="navlinks4 navlinkst" style=""
+									>ACCESSORIES</span
+								></a
+							>
+						</li>
+						<li>
+							<a href="/support.html"
+								><span class="navlinks5 navlinkst" style="">SUPPORT</span></a
+							>
+						</li>
+						<li>
+							<a href="/aboutus.html"
+								><span class="navlinks6 navlinkst" style="">ABOUT US</span></a
+							>
+						</li>
+					</ul>
+				</div>
+				<!-- Nav Links - END -->
+
+				<!-- Cart, User Account And Menu Button For Mobile - START -->
+				<div class="cartnduser_container">
+					<ul class="cartnduserul unselectable">
+						<li>
+							<a href="" onclick="cart()"
+								><img
+									src="assets/img/shop_cart_W.png"
+									alt="Cart"
+									class="cartnduser white cart cartW"
+								/>
+								<img
+									src="assets/img/shop_cart.png"
+									alt="Cart In Black"
+									class="cartnduser black cart cartB"
+									title="Cart"
+								/>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" onclick="openLogin()"
+								><img
+									src="assets/img/login_W.png"
+									alt="Profile"
+									class="cartnduser white user userW"
+								/>
+								<img
+									src="assets/img/login.png"
+									alt="Profile In Black"
+									class="cartnduser black user userB"
+									title="SignIn / SignUp"
+								/>
+							</a>
+						</li>
+						<li>
+							<img
+								src="assets/img/header_menu_open.png"
+								alt="Open Menu"
+								class="cartnduser header_menu_open"
+								onclick="openMenu()"
+							/>
+						</li>
+					</ul>
+				</div>
+				<!-- Cart, User Account And Menu Button For Mobile - END -->
+			</div>
+			<!-- Mobile View - START -->
+			<div class="bg_dim_onmenu" onclick="closeMenu()">
+				<!-- To Dim The Viewport While On Menu -->
+			</div>
+			<!-- Nav Links In Menu - START -->
+			<div class="m_navlinks_container">
+				<img
+					src="assets/img/header_menu_close.png"
+					class="header_menu_close"
+					alt="Close Menu"
+					onclick="closeMenu()"
+				/>
+				<ul class="m_navlinksul unselectable">
+					<li>
+						<a href="/index.html"
+							><span class="mnavlink1 mnavlink" style="color: #44b129"
+								>HOME</span
+							>
+						</a>
+					</li>
+					<li>
+						<a href="/games.html"
+							><span class="mnavlink2 mnavlink" style="">GAMES</span>
+						</a>
+					</li>
+					<li>
+						<a href="/consoles.html"
+							><span class="mnavlink3 mnavlink" style="">CONSOLES</span>
+						</a>
+					</li>
+					<li>
+						<a href="/accessories.html"
+							><span class="mnavlink4 mnavlink" style="">ACCESSORIES</span>
+						</a>
+					</li>
+					<li>
+						<a href="/support.html"
+							><span class="mnavlink5 mnavlink" style="">SUPPORT</span>
+						</a>
+					</li>
+					<li>
+						<a href="/aboutus.html"
+							><span class="mnavlink6 mnavlink" style="">ABOUT US</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Nav Links In Menu - END -->
+			<!-- Mobile View - END -->
+		</div>
+		<!-- Navbar END -->
+
+		<div class="login_form">
+			<img
+				src="assets/img/header_menu_close.png"
+				onclick="closeLogin()"
+				alt="Close Menu"
+			/>
+			<form action="">
+				<label for="uname">User Name: </label>
+				<input
+					type="username"
+					id="uname"
+					name="uname"
+					placeholder="Username"
+				/><br />
+				<label for="password">Password: </label>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					placeholder="Password"
+				/><br />
+				<span>New To Ybox? Create A <a href="">New Account</a></span>
+				<button type="submit" id="signin_btn">Sign In</button>
+			</form>
+		</div>
+
+		<!-- Main Banner START -->
+		<div class="main_banner_container">
+			<div class="banner_contains">
+				<!-- Background - START -->
+				<div class="video_contains">
+					<!-- Video For Desktop - START -->
+					<video
+						class="banner_video"
+						poster="assets/img/video_poster.png"
+						src="assets/video/web_banner-try 01.mp4"
+						preload=""
+						loop
+						autoplay
+						muted
+					>
+						<source
+							src="assets/video/web_banner-try 01.mp4?autoplay=1&amp;loop=1&amp;autopause=0"
+							type="video/mp4"
+						/>
+					</video>
+					<!-- Video For Desktop - END -->
+
+					<!-- Image For Mobile -->
+					<img class="m_banner" src="assets/img/m_banner_final.jpg" alt="" />
+					<!-- Image For Mobile -->
+				</div>
+				<!-- Background - END -->
+
+				<!-- Banner Content - START -->
+				<div class="banner_text unselectable">
+					<span class="er_txt">ELDEN RING</span>
+					<p class="rt_txt">Rise, Tarnished</p>
+					<a class="getnow_er_a" href="">
+						<button class="getnow_er">
+							<span class="er_getnow_txt">GET IT NOW</span>
+						</button>
+					</a>
+				</div>
+				<!-- Banner Content - END -->
+			</div>
+		</div>
+		<!-- Main Banner - END -->
+
+		<div class="placeholder_container"></div>
+
+		<!-- Footer - START -->
+		<div class="footer">
+			<div class="footer_logo_div">
+				<img src="assets/img/YBox_Logo_W_-_Final_01.png" alt="Ybox Logo" />
+			</div>
+			<span class="copyR_info">© Ybox, Inc. 2022 - All Rights Reserved</span>
+		</div>
+		<!-- Footer - END -->
+		<!-- Javascript START-->
+		<script type="text/javascript" src="assets/js/navbar.js"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<!-- Javascript END -->
+	</body>
+</html>
