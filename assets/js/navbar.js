@@ -14,58 +14,64 @@ function openMenu() {
 	bgDimOnMenu.style.display = 'block';
 	setTimeout(() => {
 		bgDimOnMenu.style.opacity = '0.5';
-	}, 1);
+	}, 5);
 }
 
 function closeMenu() {
 	navbar.style.top = '0';
 	mainBanner.style.top = '50px';
 	menu.style.right = '-60vw';
-	bgDimOnMenu.style.opacity = '0';
-	setTimeout(() => {
-		bgDimOnMenu.style.display = 'none';
-	}, 500);
+	if (loginFormDiv.style.display != 'block') {
+		bgDimOnMenu.style.opacity = '0';
+		setTimeout(() => {
+			bgDimOnMenu.style.display = 'none';
+		}, 500);
+	}
 }
 
 function openLogin() {
-	loginFormDiv.style.display = 'block';
-	setTimeout(() => {
-		loginFormDiv.style.transform = 'scale(1)';
-		loginFormDiv.style.top = '20vh';
-		loginFormDiv.style.left = '40vw';
-	}, 1);
+	if (document.readyState == 'ready' || document.readyState == 'complete') {
+		loginFormDiv.style.display = 'block';
+		bgDimOnMenu.style.display = 'block';
+		setTimeout(() => {
+			bgDimOnMenu.style.opacity = '0.5';
+			loginFormDiv.classList.add('log_active');
+		}, 10);
+	} else {
+		document.onreadystatechange(() => {
+			if (document.readyState == 'ready' || document.readyState == 'complete') {
+				loginFormDiv.style.display = 'block';
+				bgDimOnMenu.style.display = 'block';
+				setTimeout(() => {
+					bgDimOnMenu.style.opacity = '0.5';
+					loginFormDiv.classList.add('log_active');
+				}, 10);
+			}
+		});
+	}
 }
 
 function closeLogin() {
-	loginFormDiv.style.transform = 'scale(0)';
-	loginFormDiv.style.top = '-30vh';
-	loginFormDiv.style.left = '85vw';
+	loginFormDiv.classList.remove('log_active');
+	setTimeout(() => {
+		bgDimOnMenu.style.display = 'none';
+	}, 500);
 	setTimeout(() => {
 		loginFormDiv.style.display = 'none';
-	}, 1000);
+	}, 800);
 }
+
 // try {
-// 	window.onscroll = function () {
-// 		'use strict';
-// 		if (
-// 			document.body.scrollTop >= 200 ||
-// 			document.documentElement.scrollTop >= 200
-// 		) {
-// 			for (var i = 0, len = whitecull.length; i < len; i++) {
-// 				whitecull[i].classList.remove('white');
-// 			}
-// 			for (var j = 0, len = blackcull.length; j < len; j++) {
-// 				blackcull[i].style.display = 'block';
-// 			}
-// 		} else {
-// 			for (var k = 0, len = whitecull.length; k < len; i++) {
-// 				whitecull[i].classList.add('white');
-// 			}
-// 			for (var l = 0, len = blackcull.length; l < len; j++) {
-// 				blackcull[i].style.display = 'none';
-// 			}
-// 		}
-// 	};
+
+// window.onscroll = function () {
+// 	if (
+// 		document.body.scrollTop >= 500 ||
+// 		document.documentElement.scrollTop >= 500
+// 	) {
+// 		for (var i = 0, height = 60; i < height; i++) {}
+// 	}
+// };
+
 // } catch (err) {
 // 	console.log('Errors');
 // }

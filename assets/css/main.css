@@ -20,7 +20,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: var(--body-color);
+	/* background-color: var(--body-color); */
+	background-color: var(--white-2);
 }
 
 /* Custom Scrollbar - START */
@@ -241,8 +242,9 @@ html {
 	width: 100vw;
 	height: 100vh;
 	background-color: black;
-	opacity: 0.5;
+	opacity: 0;
 	display: none;
+	transition: 0.5s ease-in-out;
 }
 
 .main_banner_container {
@@ -257,7 +259,6 @@ html {
 }
 
 .video_contains {
-	height: 1080px;
 	width: 100%;
 }
 
@@ -336,17 +337,22 @@ html {
 	z-index: 200;
 	position: fixed;
 	display: none;
-	left: 85vw;
-	top: -30vh;
-	/* top: 20vh; */
-	/* left: 40vw; */
-	width: 25vw;
-	height: 35vw;
+	left: 89.3%;
+	top: -21.5%;
+	width: 350px;
+	height: 500px;
 	border-radius: 15px;
 	background-color: rgba(255, 255, 255, 0.5);
 	backdrop-filter: blur(5px);
-	transition: 1s ease-in-out;
-	transform: scale(0.01);
+	transform: scale(0.01) translate(-50%, -50%);
+	transition: 0.8s ease-in-out;
+}
+
+.login_form.log_active {
+	left: 50%;
+	top: 50%;
+	transform: scale(1) translate(-50%, -50%);
+	transition: 0.8s ease-in-out;
 }
 
 .login_form img {
@@ -416,8 +422,10 @@ html {
 }
 
 .placeholder_container {
+	position: relative;
 	height: 1920px;
 	width: 100%;
+	background-color: var(--white-2);
 }
 
 .footer {
@@ -442,7 +450,7 @@ html {
 
 .copyR_info {
 	position: absolute;
-	top: 3.5vw;
+	bottom: -20px;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -450,6 +458,271 @@ html {
 	font-size: 0.8vw;
 	color: var(--white-2);
 }
+
+.ver-div {
+	position: absolute;
+	bottom: 2px;
+	right: 0;
+	left: 0;
+	text-align: center;
+	font-size: 14px;
+	color: #606060;
+	font-family: smooch_sans, sans-serif;
+}
+
+/* .grad_transition {
+	position: relative;
+	top: -50px;
+	height: 100px;
+	background-color: transparent;
+	background-image: linear-gradient(
+		rgba(194, 194, 194, 0),
+		rgba(194, 194, 194, 1)
+	);
+}
+
+.contain_grad {
+	z-index: -1;
+	position: relative;
+	top: -100px;
+	height: 50px;
+	background-color: transparent;
+	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(194, 194, 194, 1));
+} */
+
+.title-top {
+	position: relative;
+	z-index: 2;
+	top: 0;
+	margin: 12px 8px;
+	text-align: center;
+	height: 100px;
+	background-color: #dedede;
+	box-shadow: 0px 0px 15px 5px rgba(40, 40, 40, 0.5);
+}
+
+.title-top h1 {
+	position: relative;
+	margin: 0;
+	top: 0;
+	bottom: 0;
+	padding: 31px;
+	font-family: smooch_sans, sans-serif;
+	font-size: 32px;
+}
+
+/* Home Content - START */
+
+.content-div {
+	margin-inline: 5px;
+	margin-top: 14px;
+}
+
+.grid_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		'one two'
+		'one three'
+		'four three'
+		'five six'
+		'five eight'
+		'seven eight';
+	grid-gap: 5px;
+}
+
+.card1 {
+	grid-area: one;
+}
+
+.card2 {
+	grid-area: two;
+}
+
+.card3 {
+	grid-area: four;
+}
+
+.card4 {
+	grid-area: three;
+}
+
+.card5 {
+	grid-area: five;
+}
+
+.card6 {
+	grid-area: six;
+}
+
+.card7 {
+	grid-area: seven;
+}
+
+.card8 {
+	grid-area: eight;
+}
+
+.card {
+	position: relative;
+	z-index: 2;
+	color: white;
+	font-family: 'smooch_sans', sans-serif;
+}
+
+.desc_odd {
+	position: absolute;
+	padding: 5;
+	top: 31vw;
+	left: 5%;
+	z-index: 1;
+}
+
+.desc_even {
+	position: absolute;
+	top: 1%;
+	left: 50%;
+	padding: 5%;
+	z-index: 1;
+}
+
+.big1,
+.big2,
+.big3,
+.big4 {
+	width: 100%;
+}
+
+.small1,
+.small2,
+.small3,
+.small4 {
+	width: 50%;
+}
+
+.p_odd {
+	font-size: 2.7vw;
+	font-weight: bold;
+}
+
+.p_even {
+	font-size: 1.6vw;
+	font-weight: 900;
+}
+
+.card_txt {
+	font-size: 1.33vw;
+}
+
+.card_a {
+	position: relative;
+	top: 2.12vw;
+	color: var(--white);
+	font-weight: 600;
+	font-size: 1.06vw;
+	text-decoration: none;
+}
+
+.card_a::after {
+	content: ' ❱';
+	font-size: 0.8vw;
+	margin-left: 0.5vw;
+}
+
+.card_a:hover {
+	border-bottom: 3px solid rgb(200, 200, 200);
+}
+
+.odd_card {
+}
+
+.even_card {
+	position: relative;
+	width: 100%;
+	height: 99%;
+	transform: translateY(150px);
+	opacity: 0;
+	background-color: var(--ybox-green);
+}
+
+.odd_card.active {
+}
+
+.even_card.active {
+	transform: translateY(0px);
+	opacity: 1;
+	transition: 1.3s ease-in-out;
+}
+
+@media only screen and (max-width: 550px) {
+	.grid_container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'one'
+			'two'
+			'three'
+			'four'
+			'five'
+			'six'
+			'eight'
+			'seven';
+		grid-gap: 5px;
+	}
+
+	.desc_even {
+		position: absolute;
+		top: 60vw;
+		left: 5%;
+		padding: 5%;
+		z-index: 1;
+	}
+
+	.desc_odd {
+		top: 60vw;
+		left: 5%;
+	}
+
+	.big1,
+	.big2,
+	.big3,
+	.big4 {
+		width: 100%;
+	}
+
+	.small1,
+	.small2,
+	.small3,
+	.small4 {
+		width: 100%;
+	}
+
+	.even_card {
+		background-color: transparent;
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	.p_odd,
+	.p_even {
+		font-size: 6vw;
+	}
+
+	.card_txt {
+		font-size: 3vw;
+	}
+
+	.card_a {
+		font-size: 4vw;
+	}
+
+	.card_a::after {
+		font-size: 3.5vw;
+	}
+}
+
+/* Home Content - END */
 
 @media (max-width: 1020px) {
 	.navbar {
@@ -588,6 +861,7 @@ html {
 		position: relative;
 		display: block;
 		width: 100%;
+		padding-bottom: 55px;
 	}
 
 	.banner_text {
@@ -652,12 +926,23 @@ html {
 
 	.copyR_info {
 		position: absolute;
-		top: 12.5px;
+		top: 2px;
+		height: 10px;
 		right: 8px;
 		text-align: right;
 		font-family: smooch_sans, sans-serif;
 		font-size: 2.5vw;
 		color: var(--white-2);
+	}
+
+	/* .grad_transition {
+		top: -40px;
+	}
+	.contain_grad {
+	} */
+
+	.ver-div {
+		font-size: 14px;
 	}
 }
 
