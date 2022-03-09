@@ -1,13 +1,21 @@
+// -
+
+// Commonly Used
 var navbar = document.getElementsByClassName('navbar')[0];
-var navlinks = document.getElementsByClassName('navlinksul')[0];
+var navlinks = document.querySelectorAll('.page[href]');
 var whitecull = document.getElementsByClassName('white');
 var blackcull = document.getElementsByClassName('black');
 var menu = document.getElementsByClassName('m_navlinks_container')[0];
 var bgDimOnMenu = document.getElementsByClassName('bg_dim_onmenu')[0];
 var mainBanner = document.getElementsByClassName('main_banner_container')[0];
 var loginFormDiv = document.getElementsByClassName('login_form')[0];
+// Commonly Used
 
+// -
+
+// For Navigation Menu On Mobile - START
 function openMenu() {
+	loginFormDiv.classList.remove('log_active');
 	navbar.style.top = '-50px';
 	mainBanner.style.top = '0';
 	menu.style.right = '0';
@@ -28,7 +36,11 @@ function closeMenu() {
 		}, 500);
 	}
 }
+// For Navigation Menu On Mobile - END
 
+// -
+
+// For Login Form Button Animation - START
 function openLogin() {
 	if (document.readyState == 'ready' || document.readyState == 'complete') {
 		loginFormDiv.style.display = 'block';
@@ -60,35 +72,41 @@ function closeLogin() {
 		loginFormDiv.style.display = 'none';
 	}, 800);
 }
+// For Login Form Button Animation - END
 
-// try {
+// -
 
-// window.onscroll = function () {
-// 	if (
-// 		document.body.scrollTop >= 500 ||
-// 		document.documentElement.scrollTop >= 500
-// 	) {
-// 		for (var i = 0, height = 60; i < height; i++) {}
-// 	}
-// };
+// For Navbar To Change To Hovered State OnScroll - START
+window.onscroll = function () {
+	if (
+		document.body.scrollTop >= 800 ||
+		document.documentElement.scrollTop >= 800
+	) {
+		navbar.classList.add('scroll_active');
+	} else {
+		navbar.classList.remove('scroll_active');
+	}
+};
+// For Navbar To Change To Hovered State OnScroll - END
 
-// } catch (err) {
-// 	console.log('Errors');
-// }
-// navbar.classList.add('nav-colored');
-// 		for (var i = 0, len = whiteCUl.length; i < len; i++) {
-// 			whitecull[i].classList.add('scrolled-changeW');
-// 		}
-// 		for (var j = 0, len = blackCUl.length; j < len; j++) {
-// 			blackcull[j].classList.remove('scrolled-changeGB');
-// 		}
-// 		navbar.classList.remove('nav-transparent');
+// -
 
-// navbar.classList.add('nav-transparent');
-// 		for (var k = 0, len = whiteCUl.length; k < len; k++) {
-// 			whiteCUl[k].classList.remove('scrolled-changeW');
-// 		}
-// 		for (var l = 0, len = blackCUl.length; l < len; l++) {
-// 			blackCUl[l].classList.toggle();
-// 		}
-// 		navbar.classList.remove('nav-colored');
+// To Detect And The Change Link Color In Navbar - START
+var currentPage = document.location.href;
+checkLinks = document.querySelectorAll('a[href="' + document.URL + '"]');
+checkLinks.forEach(function (link) {
+	var navspan = link.childNodes;
+	for (var i = 0; i < navspan.length; i++) {
+		if (navspan[i].nodeType !== 3) {
+			navspan[i].classList.add('current_page');
+			break;
+		}
+	}
+});
+// To Detect And The Change Link Color In Navbar - END
+
+// -
+
+// --
+
+// console.log('');

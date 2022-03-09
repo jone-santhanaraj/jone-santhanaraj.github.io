@@ -11,7 +11,7 @@
 		/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/common.css" />
-		<title>Ybox New</title>
+		<title>Ybox Official</title>
 	</head>
 	<body>
 		<!-- Navbar START -->
@@ -37,37 +37,41 @@
 				<div class="navlinks_container">
 					<ul class="navlinksul unselectable">
 						<li>
-							<a href="/index.html"
-								><span class="navlinks1 navlinkst" style="color: #44b129"
-									>HOME</span
+							<a href="https://jone-santhanaraj.github.io/"
+								><span class="navlinks1 navlinkst page" style="">HOME</span></a
+							>
+						</li>
+						<li>
+							<a href="https://jone-santhanaraj.github.io/games.html"
+								><span class="navlinks2 navlinkst page" style="">GAMES</span></a
+							>
+						</li>
+						<li>
+							<a href="https://jone-santhanaraj.github.io/consoles.html"
+								><span class="navlinks3 navlinkst page" style=""
+									>CONSOLES</span
 								></a
 							>
 						</li>
 						<li>
-							<a href="/games.html"
-								><span class="navlinks2 navlinkst" style="">GAMES</span></a
-							>
-						</li>
-						<li>
-							<a href="/consoles.html"
-								><span class="navlinks3 navlinkst" style="">CONSOLES</span></a
-							>
-						</li>
-						<li>
-							<a href="/accessories.html"
-								><span class="navlinks4 navlinkst" style=""
+							<a href="https://jone-santhanaraj.github.io/accessories.html"
+								><span class="navlinks4 navlinkst page" style=""
 									>ACCESSORIES</span
 								></a
 							>
 						</li>
 						<li>
-							<a href="/support.html"
-								><span class="navlinks5 navlinkst" style="">SUPPORT</span></a
+							<a href="https://jone-santhanaraj.github.io/support.html"
+								><span class="navlinks5 navlinkst page" style=""
+									>SUPPORT</span
+								></a
 							>
 						</li>
 						<li>
-							<a href="/aboutus.html"
-								><span class="navlinks6 navlinkst" style="">ABOUT US</span></a
+							<a href="https://jone-santhanaraj.github.io/aboutus.html"
+								><span class="navlinks6 navlinkst page" style=""
+									>ABOUT US</span
+								></a
 							>
 						</li>
 					</ul>
@@ -120,7 +124,7 @@
 				<!-- Cart, User Account And Menu Button For Mobile - END -->
 			</div>
 			<!-- Mobile View - START -->
-			<div class="bg_dim_onmenu" onclick="closeMenu()">
+			<div class="bg_dim_onmenu" onclick="closeMenu(); closeLogin()">
 				<!-- To Dim The Viewport While On Menu -->
 			</div>
 			<!-- Nav Links In Menu - START -->
@@ -133,35 +137,33 @@
 				/>
 				<ul class="m_navlinksul unselectable">
 					<li>
-						<a href="/index.html"
-							><span class="mnavlink1 mnavlink" style="color: #44b129"
-								>HOME</span
-							>
+						<a href="https://jone-santhanaraj.github.io/"
+							><span class="mnavlink1 mnavlink page" style="">HOME</span>
 						</a>
 					</li>
 					<li>
-						<a href="/games.html"
-							><span class="mnavlink2 mnavlink" style="">GAMES</span>
+						<a href="https://jone-santhanaraj.github.io/games.html"
+							><span class="mnavlink2 mnavlink page" style="">GAMES</span>
 						</a>
 					</li>
 					<li>
-						<a href="/consoles.html"
-							><span class="mnavlink3 mnavlink" style="">CONSOLES</span>
+						<a href="https://jone-santhanaraj.github.io/consoles.html"
+							><span class="mnavlink3 mnavlink page" style="">CONSOLES</span>
 						</a>
 					</li>
 					<li>
-						<a href="/accessories.html"
-							><span class="mnavlink4 mnavlink" style="">ACCESSORIES</span>
+						<a href="https://jone-santhanaraj.github.io/accessories.html"
+							><span class="mnavlink4 mnavlink page" style="">ACCESSORIES</span>
 						</a>
 					</li>
 					<li>
-						<a href="/support.html"
-							><span class="mnavlink5 mnavlink" style="">SUPPORT</span>
+						<a href="https://jone-santhanaraj.github.io/support.html"
+							><span class="mnavlink5 mnavlink page" style="">SUPPORT</span>
 						</a>
 					</li>
 					<li>
-						<a href="/aboutus.html"
-							><span class="mnavlink6 mnavlink" style="">ABOUT US</span>
+						<a href="https://jone-santhanaraj.github.io/aboutus.html"
+							><span class="mnavlink6 mnavlink page" style="">ABOUT US</span>
 						</a>
 					</li>
 				</ul>
@@ -177,23 +179,24 @@
 				onclick="closeLogin()"
 				alt="Close Menu"
 			/>
-			<form action="">
-				<label for="uname">User Name: </label>
+			<form action="" class="login_form_form">
 				<input
 					type="username"
 					id="uname"
 					name="uname"
 					placeholder="Username"
+					required
 				/><br />
-				<label for="password">Password: </label>
 				<input
 					type="password"
 					id="password"
 					name="password"
 					placeholder="Password"
+					required
 				/><br />
 				<span>New To Ybox? Create A <a href="">New Account</a></span>
-				<button type="submit" id="signin_btn">Sign In</button>
+				<!-- <button type="submit" id="signin_btn">Sign In</button> -->
+				<input type="submit" id="signin" value="Sign In" />
 			</form>
 		</div>
 
@@ -363,6 +366,11 @@
 			</div>
 		</div>
 
+		<div class="more_btn_div">
+			<a href="https://jone-santhanaraj.github.io/games.html" class="more_btn_a">
+				<button class="more_btn"><span class="more_btn_span">View More</span></button>
+			</a>
+		</div>
 		<!-- Content - END -->
 
 		<!-- <div class="placeholder_container"></div> -->
@@ -374,8 +382,8 @@
 				<span class="copyR_info">© Ybox, Inc. 2022 - All Rights Reserved</span>
 			</div>
 			<div class="ver-div">
-				<span class="version-no">Ver. 2.1.0010</span><br />
-				<span class="last-author">Jone, Vignesh</span>
+				<span class="version-no">Ver. 2.1.0470</span><br />
+				<span class="last-author">Jone, Vignesh, Sridhar</span>
 			</div>
 		</div>
 		<!-- Footer - END -->
