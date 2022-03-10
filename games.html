@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<!-- Navbar START -->
-		<div class="navbar">
+		<div class="navbar games_page">
 			<div class="nav_contains">
 				<!-- Logo In Navabar - START -->
 				<div class="logo_container unselectable">
@@ -200,176 +200,360 @@
 			</form>
 		</div>
 
-		<!-- Main Banner START -->
-		<div class="main_banner_container">
-			<div class="banner_contains">
-				<!-- Background - START -->
-				<div class="video_contains">
-					<!-- Video For Desktop - START -->
-					<video
-						class="banner_video"
-						poster="assets/img/video_poster.png"
-						src="assets/video/web_banner-try 01.mp4"
-						preload=""
-						loop
-						autoplay
-						muted
-					>
-						<source
-							src="assets/video/web_banner-try 01.mp4?autoplay=1&amp;loop=1&amp;autopause=0"
-							type="video/mp4"
-						/>
-					</video>
-					<!-- Video For Desktop - END -->
+		<div class="nav_height"></div>
 
-					<!-- Image For Mobile -->
-					<img class="m_banner" src="assets/img/m_banner_final.jpg" alt="" />
-					<!-- Image For Mobile -->
-				</div>
-				<!-- Background - END -->
+		<!-- content - START -->
 
-				<!-- Banner Content - START -->
-				<div class="banner_text unselectable">
-					<span class="er_txt">ELDEN RING</span>
-					<p class="rt_txt">Rise, Tarnished</p>
-					<a class="getnow_er_a" href="">
-						<button class="getnow_er">
-							<span class="er_getnow_txt">GET IT NOW</span>
-						</button>
-					</a>
+		<div class="games_catalog_container">
+			<h1 class="games_catalog_txt">YBOX<br />GAMES CATALOGUE</h1>
+			<div class="h1_underlay">
+				<span class="underlay_txt"
+					>Browser The Full Catalogue Of Ybox Games</span
+				>
+				<div class="games_searchbox">
+					<input
+						type="text"
+						placeholder="Search Games"
+						id="games_search"
+						onkeyup="gamesSearch()"
+					/>
+					<img src="assets/img/sea.png" class="search-icon" />
 				</div>
-				<!-- Banner Content - END -->
+			</div>
+
+			<div class="all_games_container" id="all_games_container">
+				<div class="games game1">
+					<img src="assets/img/posters/elden.jpg" alt="Elden Ring" />
+					<div class="games_desc g_desc1">
+						<span class="game_name">ELDEN RING</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<br />
+						<span class="game_price">₹ 3,990</span>
+						<span class="new_release">NEW RELEASE</span>
+					</div>
+				</div>
+				<div class="games game2">
+					<img src="assets/img/posters/pubg.jpg" alt="PUBG: BATTLEGROUNDS" />
+					<div class="games_desc g_desc2">
+						<span class="game_name">PUBG: BATTLEGROUNDS</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,000</span>
+						<span class="free_game">FREE</span>
+					</div>
+				</div>
+				<div class="games game3">
+					<img src="assets/img/posters/gtav.jpg" alt="Grand Theft Auto V" />
+					<div class="games_desc g_desc3">
+						<span class="game_name"
+							>Grand Theft Auto V
+							<span class="small_txt">Premium Edition</span>
+						</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<br />
+						<span class="game_price">₹ 2,999</span>
+					</div>
+				</div>
+				<div class="games game4">
+					<img
+						src="assets/img/posters/valhalla.jpg"
+						alt="Assassins Creed Valhalla"
+					/>
+					<div class="games_desc g_desc4">
+						<span class="game_name"
+							>Assassin's Creed<sup class="r_sup">®</sup> Valhalla</span
+						>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 1,549</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="games game5">
+					<img src="assets/img/posters/nba2k.jpg" alt="NBA 2K22" />
+					<div class="games_desc g_desc5">
+						<span class="game_name">NBA 2K22</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 3,879</span>
+					</div>
+				</div>
+				<div class="games game6">
+					<img src="assets/img/posters/cyber.jpg" alt="Cyberpunk 2077" />
+					<div class="games_desc g_desc6">
+						<span class="game_name">Cyberpunk 2077</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,012</span>
+						<span class="glitch_exclusive">Glitch Exclusive</span>
+					</div>
+				</div>
+				<div class="games game7">
+					<img src="assets/img/posters/forza4.jpg" alt="Forza Horizon 4" />
+					<div class="games_desc g_desc7">
+						<span class="game_name">Forza Horizon 4</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 4,490</span>
+					</div>
+				</div>
+				<div class="games game8">
+					<img
+						src="assets/img/posters/vanguard.jpg"
+						alt="Call Of Duty Vanguard"
+					/>
+					<div class="games_desc g_desc8">
+						<span class="game_name"
+							>Call Of Duty<sup class="r_sup">®</sup>: Vanguard</span
+						>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 3,999</span>
+					</div>
+				</div>
+				<div class="games game9">
+					<img src="assets/img/posters/aso.jpg" alt="Assassins Creed Origins" />
+					<div class="games_desc g_desc9">
+						<span class="game_name"
+							>Assassin's Creed<sup class="r_sup">®</sup>Origins</span
+						>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,799</span>
+					</div>
+				</div>
+				<div class="games game10">
+					<img src="assets/img/posters/dbz.jpg" alt="DRAGON BALL Z: KAKAROT" />
+					<div class="games_desc g_desc10">
+						<span class="game_name">DRAGON BALL Z: KAKAROT</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 5,759</span>
+					</div>
+				</div>
+				<div class="games game11">
+					<img
+						src="assets/img/posters/witcher.jpg"
+						alt="The Witcher 3: Wild Hunt"
+					/>
+					<div class="games_desc g_desc11">
+						<span class="game_name">The Witcher 3: Wild Hunt</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,799</span>
+					</div>
+				</div>
+				<div class="games game12">
+					<img src="assets/img/posters/forza5.jpg" alt="Forza Horizon 5" />
+					<div class="games_desc g_desc12">
+						<span class="game_name">Forza Horizon 5</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 5,394</span>
+					</div>
+				</div>
+				<div class="games game13">
+					<img src="assets/img/posters/farcry4.jpg" alt="Far Cry 4" />
+					<div class="games_desc g_desc13">
+						<span class="game_name">Far Cry<sup class="r_sup">®</sup> 4</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 1,899</span>
+					</div>
+				</div>
+				<div class="games game14">
+					<img src="assets/img/posters/awayout.jpg" alt="A Way Out" />
+					<div class="games_desc g_desc14">
+						<span class="game_name">A Way Out</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,495</span>
+					</div>
+				</div>
+				<div class="games game15">
+					<img
+						src="assets/img/posters/battlefield2042.jpg"
+						alt="Battlefield 2042"
+					/>
+					<div class="games_desc g_desc15">
+						<span class="game_name">Battlefield<sup>TM</sup> 2042</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 1,999</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="games game16">
+					<img src="assets/img/posters/farcry6.jpg" alt="Far Cry 6" />
+					<div class="games_desc g_desc16">
+						<span class="game_name">Far Cry<sup class="r_sup">®</sup> 4</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 3,999</span>
+					</div>
+				</div>
+				<div class="games game17">
+					<img
+						src="assets/img/posters/far_chnagingtides.jpg"
+						alt="FAR: Changing Tides"
+					/>
+					<div class="games_desc g_desc17">
+						<span class="game_name">FAR: Changing Tides</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 3,999</span>
+						<span class="new_release">NEW RELEASE</span>
+					</div>
+				</div>
+				<div class="games game18">
+					<img src="assets/img/posters/ittakestwo.jpg" alt="It Takes Two" />
+					<div class="games_desc g_desc18">
+						<span class="game_name">It Takes Two</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 3,999</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="games game19">
+					<img src="assets/img/posters/minecraft.jpg" alt="Minecraft" />
+					<div class="games_desc g_desc19">
+						<span class="game_name">Minecraft</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 1,090</span>
+					</div>
+				</div>
+				<div class="games game20">
+					<img
+						src="assets/img/posters/nfs_heat.jpg"
+						alt="Need For Speed Heat"
+					/>
+					<div class="games_desc g_desc20">
+						<span class="game_name">Need For Speed<sup>TM</sup> Heat</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,899</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="games game21">
+					<img src="assets/img/posters/nfs.jpg" alt="Need For Speed" />
+					<div class="games_desc g_desc21">
+						<span class="game_name">Need For Speed<sup>TM</sup></span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,349</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="games game22">
+					<img src="assets/img/posters/f12021.jpg" alt="F1 2021" />
+					<div class="games_desc g_desc22">
+						<span class="game_name">F1<sup class="r_sup">®</sup> 2021</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,349</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="games game23">
+					<img src="assets/img/posters/naruto.jpg" alt="NARUTO SHIPPUDEN" />
+					<div class="games_desc g_desc23">
+						<span class="game_name"
+							>NARUTO SHIPPUDEN:
+							<span class="small_txt">Ultimate Ninja STORM 4</span>
+						</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 2,490</span>
+					</div>
+				</div>
+				<div class="games game24">
+					<img src="assets/img/posters/fifa.jpg" alt="FIFA 22" />
+					<div class="games_desc g_desc24">
+						<span class="game_name">FIFA 22</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 1,890</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="hidden_game games game25">
+					<img src="assets/img/posters/gridlegends.jpg" alt="GRID Legends" />
+					<div class="games_desc g_desc25">
+						<span class="game_name">GRID Legends</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 5,490</span>
+						<span class="new_release">NEW RELEASE</span>
+					</div>
+				</div>
+				<div class="hidden_game games game26">
+					<img src="assets/img/posters/haloinfinite.jpg" alt="Halo Infinite" />
+					<div class="games_desc g_desc26">
+						<span class="game_name">Halo Infinite</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 3,199</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="hidden_game games game27">
+					<img
+						src="assets/img/posters/nfs_hp_rm.jpg"
+						alt="Need For Speed Hot Pursuit"
+					/>
+					<div class="games_desc g_desc27">
+						<span class="game_name"
+							>Need For Speed<sup>TM</sup> Hot Pursuit
+							<span class="small_txt">Remastered</span>
+						</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 1,890</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="hidden_game games game28">
+					<img src="assets/img/posters/tombraider.jpg" alt="Tomb Raider" />
+					<div class="games_desc g_desc28">
+						<span class="game_name">Tomb Raider</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 1,499</span>
+					</div>
+				</div>
+				<div class="hidden_game games game29">
+					<img
+						src="assets/img/posters/gtatrilogy.jpg"
+						alt="Grand Theft Auto: Trilogy"
+					/>
+					<div class="games_desc g_desc29">
+						<span class="game_name">Grand Theft Auto: Trilogy</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 2,499</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="hidden_game games game30">
+					<img
+						src="assets/img/posters/deadbydaylight.jpg"
+						alt="Dead By Daylight"
+					/>
+					<div class="games_desc g_desc30">
+						<span class="game_name">Dead By Daylight</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,799</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="hidden_game games game31">
+					<img
+						src="assets/img/posters/ascoddy.jpg"
+						alt="Assassins Creed Oddyssey"
+					/>
+					<div class="games_desc g_desc31">
+						<span class="game_name"
+							>Assassin's Creed<sup class="r_sup">®</sup> Odyssey</span
+						>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,999</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
+				<div class="hidden_game games game32">
+					<img
+						src="assets/img/posters/nfs_payback.jpg"
+						alt="Need For Speed Payback"
+					/>
+					<div class="games_desc g_desc32">
+						<span class="game_name">Need For Speed<sup>TM</sup> Payback</span>
+						<a href="" class="games_buy_a">GET NOW</a>
+						<span class="game_price">₹ 0,799</span>
+						<span class="on_sale">ON SALE</span>
+					</div>
+				</div>
 			</div>
 		</div>
-		<!-- Main Banner - END -->
-
-		<!-- <div class="grad_transition"></div>
-		<div class="contain_grad"></div> -->
-
-		<!-- Content - START -->
-
-		<div class="title-top">
-			<h1>Latest Featuring</h1>
-		</div>
-
-		<div class="content-div">
-			<div class="grid_container">
-				<!--  -->
-				<div class="card card1 odd_card">
-					<img
-						src="assets/img/latest/lego.jpg"
-						alt="Lego Sar Wars Poster"
-						class="card_img big1"
-					/>
-					<div class="desc_odd">
-						<p class="p_odd">LEGO® Star Wars™: The Skywalker Saga</p>
-						<p class="card_txt">The galaxy is yours</p>
-						<a href="#" class="card_a">PRE-ORDER NOW </a>
-					</div>
-				</div>
-				<!--  -->
-				<div class="card card2 even_card">
-					<img
-						src="assets/img/latest/far.jpg"
-						alt="FAR Poster"
-						class="card_img small1"
-					/>
-					<div class="desc_even">
-						<p class="p_even">FAR: Changing Tides</p>
-						<p class="card_txt">Play now with Ybox Game Pass or purchase</p>
-						<a href="#" class="card_a"> GET IT NOW </a>
-					</div>
-				</div>
-				<!--  -->
-				<div class="card card3 even_card">
-					<img
-						src="assets/img/latest/grid.jpg"
-						alt="GRID Legends Poster"
-						class="card_img small2"
-					/>
-					<div class="desc_even">
-						<p class="p_even">GRID Legends</p>
-						<p class="card_txt">Play now with Xbox Game Pass or purchase</p>
-						<a href="#" class="card_a">GET IT NOW </a>
-					</div>
-				</div>
-				<!--  -->
-				<div class="card card4 odd_card">
-					<img
-						src="assets/img/latest/wwe.jpg"
-						alt="WWE 2K22"
-						class="card_img big2"
-					/>
-					<div class="desc_odd">
-						<p class="p_odd">WWE 2K22</p>
-						<p class="card_txt">It Hits Different</p>
-						<a href="#" class="card_a">PRE-ORDER NOW </a>
-					</div>
-				</div>
-				<!--  -->
-				<div class="card card5 odd_card">
-					<img
-						src="assets/img/latest/nba.jpg"
-						alt="NBA 2K22 Poster"
-						class="card_img big3"
-					/>
-					<div class="desc_odd">
-						<p class="p_odd">NBA 2K22</p>
-						<p class="card_txt">
-							Gain inspiration from Kevin Durant, Rui Hachimura and Paolo
-						</p>
-						<a href="#" class="card_a">PRE-ORDER NOW </a>
-					</div>
-				</div>
-				<!--  -->
-				<div class="card card6 even_card">
-					<img
-						src="assets/img/latest/minecraft.jpg"
-						alt="Minecraft World Warrior Poster"
-						class="card_img small3"
-					/>
-					<div class="desc_even">
-						<p class="p_even">Minecraft World Warrior Skin Pack</p>
-						<p class="card_txt">Explore he new Gaming Adventure.</p>
-						<a href="#" class="card_a">GET IT NOW </a>
-					</div>
-				</div>
-				<!--  -->
-				<div class="card card7 even_card">
-					<img
-						src="assets/img/latest/smr.jpg"
-						alt="Marvel's Spider Man Poster"
-						class="card_img small4"
-					/>
-					<div class="desc_even">
-						<p class="p_even">Marvel's Spider Man</p>
-						<p class="card_txt">Play now with Xbox Game Pass or purchase</p>
-						<a href="#" class="card_a">GET IT NOW </a>
-					</div>
-				</div>
-				<!--  -->
-				<div class="card card8 odd_card">
-					<img
-						src="assets/img/latest/asvr.jpg"
-						alt="Asssasin's Creed Valhalla"
-						class="card_img big4"
-					/>
-					<div class="desc_odd">
-						<p class="p_odd">Assassins's Creed-valhalla</p>
-						<p class="card_txt">
-							Lead epic Viking Raids against Saxon troops and fortresses.
-						</p>
-						<a href="#" class="card_a">PRE-ORDER NOW </a>
-					</div>
-				</div>
-				<!--  -->
-			</div>
-		</div>
-
 		<div class="more_btn_div">
-			<a href="https://jone-santhanaraj.github.io/games.html" class="more_btn_a">
-				<button class="more_btn"><span class="more_btn_span">View More</span></button>
-			</a>
+			<button class="more_btn" onclick="showmoreGames()">
+				<span class="more_btn_span">View More</span>
+			</button>
 		</div>
 		<!-- Content - END -->
 
@@ -382,7 +566,7 @@
 				<span class="copyR_info">© Ybox, Inc. 2022 - All Rights Reserved</span>
 			</div>
 			<div class="ver-div">
-				<span class="version-no">Ver. 2.1.0470</span><br />
+				<span class="version-no">Ver. 2.2.0040</span><br />
 				<span class="last-author">Jone, Vignesh, Sridhar</span>
 			</div>
 		</div>
