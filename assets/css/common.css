@@ -538,6 +538,15 @@ input[type='submit']:hover {
 	color: var(--white-2);
 }
 
+.disclaimer {
+	font-family: sans-serif;
+	color: #f0f0f0;
+	font-size: 70%;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+
 .ver-div {
 	position: absolute;
 	bottom: 2px;
@@ -1155,6 +1164,16 @@ input[type='submit']:hover {
 		font-family: smooch_sans, sans-serif;
 		font-size: 2.5vw;
 		color: var(--white-2);
+	}
+
+	.disclaimer {
+		font-family: sans-serif;
+		color: #f0f0f0;
+		font-size: 60%;
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+		text-align: left;
 	}
 
 	/* .grad_transition {
