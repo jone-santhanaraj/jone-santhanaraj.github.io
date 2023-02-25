@@ -5,18 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JSON Test</title>
 	</head>
-	<script
-		type="text/javascript"
-		src="resources/js/periodic_table.json"
-	></script>
-	<script type="text/javascript" src="resources/js/main.js"></script>
+
 	<style>
 		body {
 			margin: 0 0;
 			padding: 0 0;
 		}
 	</style>
-	<body>
+	<body onload="loadJSON()">
 		<table
 			border="5"
 			bordercolor="red"
@@ -24,29 +20,13 @@
 			cellspacing="1"
 			frame="BOX"
 		>
-			<thead bgcolor="#45b3bf">
-				<tr id="row_head">
-					<th>Element</th>
-					<th>Name</th>
-					<th>Type</th>
-					<th>Atomic Number</th>
-					<th>Atomic Mass</th>
-					<th>Melting Point</th>
-					<th>Boiling Point</th>
-					<th>Year Of Discovery</th>
-					<th>Discovered By</th>
-					<th>Eletrons Per Shell</th>
-					<th>Phase At STP</th>
-					<th>Density At STP</th>
-					<th>Density As Liquid</th>
-					<th>Triple Point</th>
-					<th>Critical Point</th>
-					<th>Heat Of Fusion</th>
-					<th>Heat Of Vaporization</th>
-					<th>Molar Heat Capacity</th>
-				</tr>
-			</thead>
+			<thead id="table1_head" bgcolor="#45b3bf"></thead>
 			<tbody id="table1" bgcolor="#9ad6db"></tbody>
 		</table>
 	</body>
+	<script
+		type="text/javascript"
+		src="resources/json/periodic_table.json"
+	></script>
+	<script type="text/javascript" src="resources/js/main.js"></script>
 </html>

@@ -1,3 +1,5 @@
+v0.1.000
+
 This Project Is Created By,
 Jone Santhanaraj
 Tamil Nadu, India
@@ -9,6 +11,10 @@ Run The Batch File "Browser Sync.bat"
 
 NOTE:
 Browser Sync is a Third-Party Command-line Program used to locally host a Webpage in the directory using localhost:{port} and live reload the page whenever the HTML or CSS files are edited. The Program is scripted in this Batch file to automatically run the required commands when executed.
+If you don't have Browser-Sync installed,
+run:
+npm install -g browser-sync
+in the command prompt to install Browser-Sync before running the ".bat" file.
 
 ---
 
