@@ -3,30 +3,43 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>JSON Test</title>
+		<title>Periodic Table - By Jone</title>
+		<link rel="stylesheet" href="resources/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="resources/img/ico/favicon.ico" />
 	</head>
 
-	<style>
-		body {
-			margin: 0 0;
-			padding: 0 0;
-		}
-	</style>
 	<body onload="loadJSON()">
-		<table
-			border="5"
-			bordercolor="red"
-			cellpadding="3"
-			cellspacing="1"
-			frame="BOX"
-		>
-			<thead id="table1_head" bgcolor="#45b3bf"></thead>
-			<tbody id="table1" bgcolor="#9ad6db"></tbody>
-		</table>
+		<div class="loadingscreen">
+			<div class="bg">
+				<div class="gif_bg">
+					<img
+						src="resources/img/gif/Book.gif"
+						alt="Loading..."
+						id="loading_gif"
+					/>
+				</div>
+				<p class="Loading_text">LOADING<br />PLEASE WAIT</p>
+			</div>
+		</div>
+		<div class="content">
+			<table
+				id="table"
+				border="5"
+				bordercolor="red"
+				cellpadding="3"
+				cellspacing="1"
+				frame="BOX"
+			>
+				<thead id="table1_head" bgcolor="#45b3bf"></thead>
+				<tbody id="table1" bgcolor="#9ad6db"></tbody>
+			</table>
+		</div>
+
+		<script
+			type="text/javascript"
+			src="resources/json/periodic_table.json"
+		></script>
 	</body>
-	<script
-		type="text/javascript"
-		src="resources/json/periodic_table.json"
-	></script>
+
 	<script type="text/javascript" src="resources/js/main.js"></script>
 </html>

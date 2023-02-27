@@ -22,7 +22,7 @@ echo.
 timeout /t 2 >nul /nobreak
 
 rem "Change Files Mention Within The Double Quotes ;Below; "
-start "" browser-sync start --s --f "*.html, *.css"
+start "" browser-sync start --s --f "**/*"
 rem "Change Files Mention Within The Double Quotes ;Above; "
 
 timeout 1 >nul

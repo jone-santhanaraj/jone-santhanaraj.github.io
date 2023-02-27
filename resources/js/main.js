@@ -117,6 +117,8 @@ let count = 0; // To make sure that the iteration thru "allParams" runs only for
 let check = true; // To make sure that the "allParams" stores the Keynames of only one Object
 let pass = true; // To make sure that the "allID"  stores the Keynames of only one Object
 let proceed = true; // To make sure that the Header tag is created only once
+// eslint-disable-next-line no-unused-vars
+let loaded = false;
 
 let nOfObj = 0; // To have a count of the number of Objects in the JSON
 
@@ -124,6 +126,11 @@ let nOfObj = 0; // To have a count of the number of Objects in the JSON
 let allID = []; // To store the ID names of the td tags for the HTML table
 // eslint-disable-next-line prefer-const
 let allParams = []; // To store the names of the Keys in the First Object of the JSON
+
+function loading_done() {
+	document.getElementsByClassName('loadingscreen')[0].style.display = 'none';
+	loaded = true;
+}
 
 function createID(peri) {
 	var periodic = JSON.parse(JSON.stringify(peri));
@@ -368,6 +375,7 @@ function base(periodic_table) {
 		// console.log('allParams: ' + allParams);
 		assignValues(pt);
 	}
+	loading_done();
 }
 
 // eslint-disable-next-line no-unused-vars
