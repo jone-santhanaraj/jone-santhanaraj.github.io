@@ -128,8 +128,9 @@ let allID = []; // To store the ID names of the td tags for the HTML table
 let allParams = []; // To store the names of the Keys in the First Object of the JSON
 
 function loading_done() {
-	document.getElementsByClassName('loadingscreen')[0].style.display = 'none';
+	document.getElementsByClassName('loadingscreen')[0].remove();
 	loaded = true;
+	console.log('loading_done function ran succussfully!');
 }
 
 function createID(peri) {
