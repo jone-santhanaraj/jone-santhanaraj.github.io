@@ -381,7 +381,7 @@ function base(periodic_table) {
 
 // eslint-disable-next-line no-unused-vars
 function loadJSON() {
-	fetch('https://jonesanthanaraj.me/project_periodic-table/resources/json/periodic_table.json')
+	fetch('resources/json/periodic_table.json')
 		.then((response) => response.json())
 		.then((json) => {
 			// console.log(json.v);
