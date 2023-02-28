@@ -1,0 +1,16 @@
+{
+	"jone_santhanaraj": {
+		"email": "jonesanthanaraj@gmail.com",
+		"firstName": "Jone",
+		"lastName": "Santhanaraj",
+		"passwd": 122941108,
+		"itemsInCart": ["game1"]
+	},
+	"jai_ganesh": {
+		"email": "jaiganesh1@gmail.com",
+		"firstName": "Jai",
+		"lastName": "Ganesh",
+		"passwd": 99162322,
+		"itemsInCart": ["game1", "game12"]
+	}
+}

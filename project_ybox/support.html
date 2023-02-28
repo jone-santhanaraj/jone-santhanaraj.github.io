@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			href="https://jonesanthanaraj.me/project_ybox/assets/img/YBox_Favicon_-_Final.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="https://jonesanthanaraj.me/project_ybox/assets/css/main.css" />
+		<link rel="stylesheet" href="https://jonesanthanaraj.me/project_ybox/assets/css/common.css" />
+		<title>Ybox Official</title>
+	</head>
+	<body>
+		<!-- Navbar START -->
+		<div class="navbar">
+			<div class="nav_contains">
+				<!-- Logo In Navabar - START -->
+				<div class="logo_container unselectable">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/assets/img/YBox_Logo_W_-_Final_01.png"
+						alt="Ybox Logo"
+						class="logo white logoW"
+					/>
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/assets/img/YBox_Logo_-_Final_01.png"
+						alt="Ybox Logo In Green Color"
+						class="logo black logoG"
+						title="Ybox Official"
+					/>
+				</div>
+				<!-- Logo In Navbar - END -->
+
+				<!-- Navbar Links For Desktop - START -->
+				<div class="navlinks_container">
+					<ul class="navlinksul unselectable">
+						<li>
+							<a href="http://localhost:3000/"
+								><span class="navlinks1 navlinkst page" style="">HOME</span></a
+							>
+						</li>
+						<li>
+							<a href="https://jonesanthanaraj.me/project_ybox/games.html"
+								><span class="navlinks2 navlinkst page" style="">GAMES</span></a
+							>
+						</li>
+						<li>
+							<a href="https://jonesanthanaraj.me/project_ybox/consoles.html"
+								><span class="navlinks3 navlinkst page" style=""
+									>CONSOLES</span
+								></a
+							>
+						</li>
+						<li>
+							<a href="https://jonesanthanaraj.me/project_ybox/accessories.html"
+								><span class="navlinks4 navlinkst page" style=""
+									>ACCESSORIES</span
+								></a
+							>
+						</li>
+						<li>
+							<a href="https://jonesanthanaraj.me/project_ybox/support.html"
+								><span class="navlinks5 navlinkst page" style=""
+									>SUPPORT</span
+								></a
+							>
+						</li>
+						<li>
+							<a href="https://jonesanthanaraj.me/project_ybox/aboutus.html"
+								><span class="navlinks6 navlinkst page" style=""
+									>ABOUT US</span
+								></a
+							>
+						</li>
+					</ul>
+				</div>
+				<!-- Nav Links - END -->
+
+				<!-- Cart, User Account And Menu Button For Mobile - START -->
+				<div class="cartnduser_container">
+					<ul class="cartnduserul unselectable">
+						<!-- <li>
+							<a href="" onclick="cart()"
+								><img
+									src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/shop_cart_W.png"
+									alt="Cart"
+									class="cartnduser white cart cartW"
+								/>
+								<img
+									src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/shop_cart.png"
+									alt="Cart In Black"
+									class="cartnduser black cart cartB"
+									title="Cart"
+								/>
+							</a>
+						</li> -->
+						<li>
+							<a href="javascript:void(0)" onclick="openLogin()"
+								><img
+									src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/login_W.png"
+									alt="Profile"
+									class="cartnduser white user userW"
+								/>
+								<img
+									src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/login.png"
+									alt="Profile In Black"
+									class="cartnduser black user userB"
+									title="SignIn / SignUp"
+								/>
+							</a>
+						</li>
+						<li>
+							<img
+								src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/header_menu_open.png"
+								alt="Open Menu"
+								class="cartnduser header_menu_open"
+								onclick="openMenu()"
+							/>
+						</li>
+					</ul>
+				</div>
+				<!-- Cart, User Account And Menu Button For Mobile - END -->
+			</div>
+			<!-- Mobile View - START -->
+			<div class="bg_dim_onmenu" onclick="closeMenu(); closeLogin()">
+				<!-- To Dim The Viewport While On Menu -->
+			</div>
+			<!-- Nav Links In Menu - START -->
+			<div class="m_navlinks_container">
+				<img
+					src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/header_menu_close.png"
+					class="header_menu_close"
+					alt="Close Menu"
+					onclick="closeMenu()"
+				/>
+				<ul class="m_navlinksul unselectable">
+					<li>
+						<a href="http://localhost:3000/"
+							><span class="mnavlink1 mnavlink page" style="">HOME</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://jonesanthanaraj.me/project_ybox/games.html"
+							><span class="mnavlink2 mnavlink page" style="">GAMES</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://jonesanthanaraj.me/project_ybox/consoles.html"
+							><span class="mnavlink3 mnavlink page" style="">CONSOLES</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://jonesanthanaraj.me/project_ybox/accessories.html"
+							><span class="mnavlink4 mnavlink page" style="">ACCESSORIES</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://jonesanthanaraj.me/project_ybox/support.html"
+							><span class="mnavlink5 mnavlink page" style="">SUPPORT</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://jonesanthanaraj.me/project_ybox/aboutus.html"
+							><span class="mnavlink6 mnavlink page" style="">ABOUT US</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Nav Links In Menu - END -->
+			<!-- Mobile View - END -->
+		</div>
+		<!-- Navbar END -->
+
+		<div class="login_form">
+			<img
+				src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/header_menu_close.png"
+				onclick="closeLogin()"
+				alt="Close Menu"
+			/>
+			<form action="" class="login_form_form">
+				<input
+					type="username"
+					id="uname"
+					name="uname"
+					placeholder="Username"
+					required
+				/><br />
+				<input
+					type="password"
+					id="password"
+					name="password"
+					placeholder="Password"
+					required
+				/><br />
+				<span>New To Ybox? Create A <a href="">New Account</a></span>
+				<!-- <button type="submit" id="signin_btn">Sign In</button> -->
+				<input type="submit" id="signin" value="Sign In" />
+			</form>
+		</div>
+
+		<!-- Main Banner START -->
+		<div class="main_banner_container">
+			<div class="banner_contains">
+				<!-- Background - START -->
+				<div class="video_contains">
+					<!-- Video For Desktop - START -->
+					<video
+						class="banner_video"
+						poster="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/video_poster.png"
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/video/web_banner-try 01.mp4"
+						preload=""
+						loop
+						autoplay
+						muted
+					>
+						<source
+							src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/video/web_banner-try 01.mp4?autoplay=1&amp;loop=1&amp;autopause=0"
+							type="video/mp4"
+						/>
+					</video>
+					<!-- Video For Desktop - END -->
+
+					<!-- Image For Mobile -->
+					<img class="m_banner" src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/m_banner_final.jpg" alt="" />
+					<!-- Image For Mobile -->
+				</div>
+				<!-- Background - END -->
+
+				<!-- Banner Content - START -->
+				<div class="banner_text unselectable">
+					<span class="er_txt">ELDEN RING</span>
+					<p class="rt_txt">Rise, Tarnished</p>
+					<a class="getnow_er_a" href="">
+						<button class="getnow_er">
+							<span class="er_getnow_txt">GET IT NOW</span>
+						</button>
+					</a>
+				</div>
+				<!-- Banner Content - END -->
+			</div>
+		</div>
+		<!-- Main Banner - END -->
+
+		<!-- <div class="grad_transition"></div>
+		<div class="contain_grad"></div> -->
+
+		<!-- Content - START -->
+
+		<div class="title-top">
+			<h1>Latest Featuring</h1>
+		</div>
+
+		<div class="content-div">
+			<div class="grid_container">
+				<!--  -->
+				<div class="card card1 odd_card">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/latest/lego.jpg"
+						alt="Lego Sar Wars Poster"
+						class="card_img big1"
+					/>
+					<div class="desc_odd">
+						<p class="p_odd">LEGO® Star Wars™: The Skywalker Saga</p>
+						<p class="card_txt">The galaxy is yours</p>
+						<a href="#" class="card_a">PRE-ORDER NOW </a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="card card2 even_card">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/latest/far.jpg"
+						alt="FAR Poster"
+						class="card_img small1"
+					/>
+					<div class="desc_even">
+						<p class="p_even">FAR: Changing Tides</p>
+						<p class="card_txt">Play now with Ybox Game Pass or purchase</p>
+						<a href="#" class="card_a"> GET IT NOW </a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="card card3 even_card">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/latest/grid.jpg"
+						alt="GRID Legends Poster"
+						class="card_img small2"
+					/>
+					<div class="desc_even">
+						<p class="p_even">GRID Legends</p>
+						<p class="card_txt">Play now with Xbox Game Pass or purchase</p>
+						<a href="#" class="card_a">GET IT NOW </a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="card card4 odd_card">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/latest/wwe.jpg"
+						alt="WWE 2K22"
+						class="card_img big2"
+					/>
+					<div class="desc_odd">
+						<p class="p_odd">WWE 2K22</p>
+						<p class="card_txt">It Hits Different</p>
+						<a href="#" class="card_a">PRE-ORDER NOW </a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="card card5 odd_card">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/latest/nba.jpg"
+						alt="NBA 2K22 Poster"
+						class="card_img big3"
+					/>
+					<div class="desc_odd">
+						<p class="p_odd">NBA 2K22</p>
+						<p class="card_txt">
+							Gain inspiration from Kevin Durant, Rui Hachimura and Paolo
+						</p>
+						<a href="#" class="card_a">PRE-ORDER NOW </a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="card card6 even_card">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/latest/minecraft.jpg"
+						alt="Minecraft World Warrior Poster"
+						class="card_img small3"
+					/>
+					<div class="desc_even">
+						<p class="p_even">Minecraft World Warrior Skin Pack</p>
+						<p class="card_txt">Explore he new Gaming Adventure.</p>
+						<a href="#" class="card_a">GET IT NOW </a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="card card7 even_card">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/latest/smr.jpg"
+						alt="Marvel's Spider Man Poster"
+						class="card_img small4"
+					/>
+					<div class="desc_even">
+						<p class="p_even">Marvel's Spider Man</p>
+						<p class="card_txt">Play now with Xbox Game Pass or purchase</p>
+						<a href="#" class="card_a">GET IT NOW </a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="card card8 odd_card">
+					<img
+						src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/latest/asvr.jpg"
+						alt="Asssasin's Creed Valhalla"
+						class="card_img big4"
+					/>
+					<div class="desc_odd">
+						<p class="p_odd">Assassins's Creed-valhalla</p>
+						<p class="card_txt">
+							Lead epic Viking Raids against Saxon troops and fortresses.
+						</p>
+						<a href="#" class="card_a">PRE-ORDER NOW </a>
+					</div>
+				</div>
+				<!--  -->
+			</div>
+		</div>
+
+		<div class="more_btn_div">
+			<a href="https://jonesanthanaraj.me/project_ybox/games.html" class="more_btn_a">
+				<button class="more_btn"><span class="more_btn_span">View More</span></button>
+			</a>
+		</div>
+		<!-- Content - END -->
+
+		<!-- <div class="placeholder_container"></div> -->
+
+		<!-- Footer - START -->
+		<div class="footer">
+			<div class="footer_logo_div">
+				<img src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/img/YBox_Logo_W_-_Final_01.png" alt="Ybox Logo" />
+				<span class="copyR_info">© Ybox, Inc. 2022 - All Rights Reserved</span>
+			</div>
+			<div class="ver-div">
+				<span class="version-no">Ver. 2.1.0470</span><br />
+				<span class="last-author">Jone, Vignesh, Sridhar</span>
+			</div>
+		</div>
+		<!-- Footer - END -->
+		<!-- Javascript START-->
+		<script type="text/javascript" src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/js/navbar.js"></script>
+		<script type="text/javascript" src="https://jonesanthanaraj.me/project_ybox/https://jonesanthanaraj.me/project_ybox/assets/js/main.js"></script>
+		<!-- Javascript END -->
+	</body>
+</html>

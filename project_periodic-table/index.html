@@ -1,0 +1,45 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Periodic Table - By Jone</title>
+		<link rel="stylesheet" href="https://jonesanthanaraj.me/projec_periodic-table/resources/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="https://jonesanthanaraj.me/projec_periodic-table/resources/img/ico/favicon.ico" />
+	</head>
+
+	<body onload="loadJSON()">
+		<div class="loadingscreen">
+			<div class="bg">
+				<div class="gif_bg">
+					<img
+						src="https://jonesanthanaraj.me/projec_periodic-table/resources/img/gif/Book.gif"
+						alt="Loading..."
+						id="loading_gif"
+					/>
+				</div>
+				<p class="Loading_text">LOADING<br />PLEASE WAIT</p>
+			</div>
+		</div>
+		<div class="content">
+			<table
+				id="table"
+				border="5"
+				bordercolor="red"
+				cellpadding="3"
+				cellspacing="1"
+				frame="BOX"
+			>
+				<thead id="table1_head" bgcolor="#45b3bf"></thead>
+				<tbody id="table1" bgcolor="#9ad6db"></tbody>
+			</table>
+		</div>
+
+		<script
+			type="text/javascript"
+			src="https://jonesanthanaraj.me/projec_periodic-table/resources/json/periodic_table.json"
+		></script>
+	</body>
+
+	<script type="text/javascript" src="https://jonesanthanaraj.me/projec_periodic-table/resources/js/main.js"></script>
+</html>
