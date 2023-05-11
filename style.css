@@ -17,15 +17,24 @@ body {
 		font-weight: 400;
 		color: rgb(99, 99, 99);
 		margin-top: 10vh;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 
 	h2 {
 		font-size: 2vw;
 		margin-top: -6vh;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 
 	p {
 		font-size: 1vw;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 
 	#buttons_container {
@@ -37,6 +46,9 @@ body {
 		height: 25vh;
 		border-radius: 20px;
 		border: 2px solid #7a7a7a;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 
 	button {
@@ -51,14 +63,30 @@ body {
 		border: 1.5px solid #353535;
 		border-radius: 10px;
 		background: linear-gradient(to right, #b3b3b3, #9e9e9e);
+		transition: 300ms ease-out;
 		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
+
+	button:hover {
+		border: 1.8px solid #353535;
+		border-radius: 15px;
+		font-size: 1.05vw;
+		background: linear-gradient(to right, #a4a4a4, #8d8d8d);
+		transition: 300ms ease-in;
+	}
+
 	span {
 		position: absolute;
 		font-size: 0.8vw;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, 360%);
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 }
 @media all and (orientation: portrait) {
@@ -68,15 +96,24 @@ body {
 		font-weight: 400;
 		color: rgb(181, 180, 180);
 		margin-top: 10vh;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 
 	h2 {
 		font-size: 2.5vh;
 		margin-top: 20vh;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 
 	p {
 		font-size: 1.5vh;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 	#buttons_container {
 		position: absolute;
@@ -87,6 +124,9 @@ body {
 		height: 20vh;
 		border-radius: 20px;
 		border: 2px solid #7a7a7a;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 	button {
 		top: 0;
@@ -101,6 +141,9 @@ body {
 		border-radius: 10px;
 		background: linear-gradient(to right, #b3b3b3, #9e9e9e);
 		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 	span {
 		position: absolute;
@@ -109,5 +152,8 @@ body {
 		left: 50%;
 		width: 80vw;
 		transform: translate(-50%, 360%);
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 	}
 }
