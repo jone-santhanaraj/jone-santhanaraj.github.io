@@ -1,0 +1,14 @@
+{
+	"project_ybox": {
+		"pagename": "First Build - YBox Official 🟢",
+		"pagelink": "../../project_ybox/index.html"
+	},
+	"project_periodic-table": {
+		"pagename": "Huge JSON data - PT 🔬🥵",
+		"pagelink": "../../project_periodic-table/index.html"
+	},
+	"project_first-react-website": {
+		"pagename": "First React Website - GPT-3 🤖",
+		"pagelink": "../../project_first-react-website/index.html"
+	}
+}

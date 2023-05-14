@@ -1,11 +1,11 @@
 @font-face {
 	font-family: wonderella;
-	src: url(fonts/wonderella.ttf);
+	src: url(../css/fonts/wonderella.ttf);
 }
 
 @font-face {
 	font-family: smooch_sans;
-	src: url(fonts/SmoochSans.ttf);
+	src: url(../css/fonts/SmoochSans.ttf);
 }
 
 :root {
